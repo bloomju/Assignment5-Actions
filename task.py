@@ -1,4 +1,5 @@
 import math
+from datetime import date
 
 
 def firstrun():
@@ -11,3 +12,7 @@ def areaFromRadius(rad):
 
 def firstLastElement(myList):
     return [myList[0], myList[-1]]
+
+
+def numDays(date1, date2):
+    return abs((date2-date1).days)
