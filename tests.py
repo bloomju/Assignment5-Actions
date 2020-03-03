@@ -18,7 +18,6 @@ class TestCase(unittest.TestCase):
             self.assertEqual(expected[ii], task.areaFromRadius(ii))
 
     def testFirstLastElement(self):
-        expected = [x for x in range(100)]
         for ii in range(100):
             myList = [x for x in range(ii+1)]
             firstLast = task.firstLastElement(myList)
