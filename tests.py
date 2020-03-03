@@ -27,8 +27,8 @@ class TestCase(unittest.TestCase):
             self.assertEqual(firstLast[1], ii)
 
     def testNumDays(self):
-        dateL1 = [date(random.randrange(0, 10000), random.randrange(1, 13), random.randrange(1, 29)) for x in range(100)]
-        dateL2 = [date(random.randrange(0, 10000), random.randrange(1, 13), random.randrange(1, 29)) for x in range(100)]
+        dateL1 = [date(random.randrange(1, 10000), random.randrange(1, 13), random.randrange(1, 29)) for x in range(100)]
+        dateL2 = [date(random.randrange(1, 10000), random.randrange(1, 13), random.randrange(1, 29)) for x in range(100)]
         expected = [abs((dateL1[x]-dateL2[x]).days) for x in range(100)]
         for ii in range(100):
             self.assertEqual(expected[ii], task.numDays(dateL1[ii], dateL2[ii]))

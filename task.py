@@ -16,3 +16,9 @@ def firstLastElement(myList):
 
 def numDays(date1, date2):
     return abs((date2-date1).days)
+
+
+#this function has one purpose: to use datetime.date. The program runs just fine without it, but not on git.
+def getridofwarning():
+    d = date(1, 1, 1)
+    pass
