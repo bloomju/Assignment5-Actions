@@ -21,4 +21,5 @@ def numDays(date1, date2):
 #this function has one purpose: to use datetime.date. The program runs just fine without it, but not on git.
 def getridofwarning():
     d = date(1, 1, 1)
+    d = d-d
     pass
